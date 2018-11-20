@@ -1,2 +1,9 @@
-/build
-/node_modules
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+
+# truffle build directory
+build/
