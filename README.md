@@ -2,9 +2,8 @@
 This repo contains Solidity smart contract code for Aha Knowledge Token which conforms [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) standard on Ethereum and vesting contract which is used for token vesting to beneficiary.
 
 ## Specification
----
+
 ### AHT Token
----
 **NOTES**
 This token conforms [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) standard. This specification includes methods that are not included in ERC20 standard only.
 ### Methods
@@ -42,7 +41,6 @@ function  burn(uint256 value) public onlyBurner
 ```
 
 ### Vesting
----
 A token holder contract that can release its token balance gradually like a  typical vesting scheme, with a cliff and vesting period. Optionally revocable by the owner. Implementations are provided by [OpenZeppelin implementation](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/9b3710465583284b8c4c5d2245749246bb2e0094/contracts/token/ERC20/ERC20.sol) which is well tested.
 
 ### Methods
@@ -105,12 +103,10 @@ function  revoke(IERC20 token) public onlyOwner
 ```
 
 ## Requirements
----
 - NodeJS 5.0+ recommended.
 - Truffle
 
 ## Initialize
----
 
 ```
 npm install
@@ -120,7 +116,6 @@ truffle migrate
 
 
 ## Test
----
 The repo has a comprehensive test suite. You can run it via following command.
 
 ```
