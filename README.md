@@ -15,19 +15,19 @@ This token conforms [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/ei
 function  approveAndCall(address _spender, uint256 _amount, bytes _extraData) public  returns (bool success)
 ```
 #### increaseAllwance
-Increase the amount of tokens that an owner allowed to a spender. `approve` should be called when `allowed[_spender] == 0`. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined)
+Increase the amount of tokens that an owner allowed to a spender. `approve` should be called when `allowed[_spender] == 0`. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined).
 
 **NOTES**
-It is to prevent attack vectors like the one[described here](https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/)and discussed[here](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)
+It is to prevent attack vectors like the one [described here](https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/) and discussed [here](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729).
 
 ```js
 function increaseAllowance(address spender, uint256 addedValue) public returns (bool)
 ```
 #### decreaseAllowance
-Decrease the amount of tokens that an owner allowed to a spender. `approve` should be called when `allowed[_spender] == 0`. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined)
+Decrease the amount of tokens that an owner allowed to a spender. `approve` should be called when `allowed[_spender] == 0`. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined).
 
 **NOTES**
-It is to prevent attack vectors like the one [described here](https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/) and discussed [here](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)
+It is to prevent attack vectors like the one [described here](https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/) and discussed [here](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729).
 
 ```js
 function  decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool)
