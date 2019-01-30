@@ -7,3 +7,8 @@ node_modules
 
 # truffle build directory
 build/
+
+.env
+
+# deployment scripts
+migrations/*_deploy_vesting.js
