@@ -116,7 +116,7 @@ truffle migrate
 
 
 ## Test
-The repo has a comprehensive test suite. You can run it via following command.
+This repo has a comprehensive test suite. You can run it via following command.
 
 ```
 truffle test
