@@ -96,6 +96,13 @@ function  revoked(address token) public  view  returns(bool)
 ```
 
 #### release
+Transfers vested tokens to beneficiary.
+
+```js
+function release(IERC20 token) public
+```
+
+#### revoke
 Allows the owner to revoke the vesting. Tokens already vested remain in the contract, the rest are returned to the owner.
 
 ```js
@@ -116,7 +123,7 @@ truffle migrate
 
 
 ## Test
-The repo has a comprehensive test suite. You can run it via following command.
+This repo has a comprehensive test suite. You can run it via following command.
 
 ```
 truffle test
